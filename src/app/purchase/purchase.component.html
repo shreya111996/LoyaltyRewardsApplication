@@ -1,0 +1,16 @@
+<h1>ITEMS AVAILABLE TO PURCHASE</h1>
+<div class="purchase-options">
+  <mat-card *ngFor="let item of items">
+    <img mat-card-image [src]="item.image" alt="{{ item.name }}">
+    <mat-card-header>
+      <mat-card-title>{{ item.name }}</mat-card-title>
+      <mat-card-subtitle>{{ item.price }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ item.description }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="buyItem(item)">Buy</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

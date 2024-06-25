@@ -1,0 +1,39 @@
+.user-info {
+  /*padding: 20px;
+  border: 1px solid #ccc;*/
+  text-align: center;
+  /*background:linear-gradient(to bottom, #d19999, #E0E0E0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+  
+}
+
+.user-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.user-field {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.catalog-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #af4c4c !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: none;
+}

@@ -1,0 +1,28 @@
+/* dashboard-layout.component.css */
+.dashboard-header {
+  margin-top: 25px; /* Space below the main header */
+}
+
+.header-card {
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  color: blueviolet;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #ae2626;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dashboard-content {
+  margin-top: 20px; /* Space below the dashboard header */
+  padding: 25px;
+}

@@ -1,0 +1,32 @@
+<div class="signup-container">
+  <mat-card>
+    <mat-card-title>Sign Up</mat-card-title>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" required />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Contact Number</mat-label>
+        <input matInput formControlName="contactNumber" required />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" required />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" required />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="loading">
+        Signup
+      </button>
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+    </form>
+    <div class="login-link">
+      <span>Already have an account! </span><a routerLink="/login"> Login Here</a>
+    </div>
+  </mat-card>
+</div>

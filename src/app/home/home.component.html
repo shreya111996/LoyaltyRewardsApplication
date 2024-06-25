@@ -1,0 +1,24 @@
+<div class="user-info">
+  <!-- <img src="assets/user.png" alt="User Photo" class="user-photo">
+    <h2 class="user-name">{{ currentUser?.name }}</h2>
+    <p class="reward-points">Rewards Earned: <span class="points">{{ currentUser?.current_points }}</span></p>
+    <a routerLink="/rewards-catalog" class="catalog-link">View Rewards Catalog</a> -->
+
+  <div class="user-field">
+    <span class="label">Username :</span>
+    <span class="value">{{ currentUser?.name }}</span>
+  </div>
+  <div class="user-field">
+    <span class="label">Email :</span>
+    <span class="value">{{ currentUser?.email }}</span>
+  </div>
+  <div class="user-field">
+    <span class="label">Contact Number :</span>
+    <span class="value">{{ currentUser?.contactNumber }}</span>
+  </div>
+  <div class="user-field">
+    <span class="label">Current Points :</span>
+    <span class="value">{{ currentUser?.current_points }}</span>
+  </div>
+  <button (click)="redirectToCatalog()" class="catalog-button">View Rewards Catalog</button>
+</div>

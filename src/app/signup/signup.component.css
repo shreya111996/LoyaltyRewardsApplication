@@ -1,0 +1,35 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+mat-card {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+mat-card-title{
+  text-align: center;
+}
+
+.login-link {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.login-link a {
+  margin-left: 5px;
+}
+
+button {
+  background-color: #af4c4c !important;
+  color: #fff;
+  width: 100%;
+}
+
+button.mat-raised-button:hover {
+  background-color: #7d0e0e !important;
+}
